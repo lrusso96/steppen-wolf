@@ -4,9 +4,5 @@
         <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
     <a class="no-underline-hover h5 block py-1 mb-1" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
-    {% if post.description %}
-        <p>{{ post.description }}</p>
-    {% else %}
-        <p>{{ post.content | strip_html | truncatewords:30 }}</p>
-    {% endif %}
+    {% include post_preview.html post=post %}
 </div>

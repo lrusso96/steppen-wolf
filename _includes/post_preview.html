@@ -1,0 +1,6 @@
+{% if include.post.description %}
+{% assign post_preview = include.post.description %}
+{% else %}
+{% assign post_preview = include.post.content | strip_html | truncatewords:30 %}
+{% endif %}
+<p>{{ post_preview }}</p>
