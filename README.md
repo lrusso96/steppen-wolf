@@ -1,6 +1,6 @@
 # Steppenwolf
 
-A solitary place for steppen wolves, interested in crypto: notes, random stuff, exercises and theoreticatl definitions collected as a set of Jekyll posts.
+A solitary place for steppen wolves, interested in crypto: notes, random stuff, exercises and theoretical definitions collected as a set of Jekyll posts.
 
 ## Dependencies
 
