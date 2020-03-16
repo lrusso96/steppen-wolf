@@ -25,6 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/steppen-wolf" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: lrusso96
+github_repo: steppen-wolf
+
 
 # Build settings
 theme: jekyll-athena
