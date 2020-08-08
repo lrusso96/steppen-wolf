@@ -2,9 +2,6 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.0.0"
 
-# Athena theme
-gem "jekyll-athena"
-
 # Analytics support
 gem 'jekyll-analytics'
 
