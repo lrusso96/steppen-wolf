@@ -8,12 +8,16 @@ layout: default
         <div class="clearfix mb-4 py-1">
             <p class="h4 lh-condensed"><time datetime="{{ page.date | date_to_xmlschema }}"
                     itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-            <div class="col-1 sm-width-full border-top-thick">
+            <div class="col-12 sm-width-full border-top-thick">
+                <hr />
+                {% for tag in page.tags %}
+                <a class=tag href={{site.baseurl | append: '/tags/' | append: tag }}>{{tag}}</a>
+                {% endfor %}
             </div>
         </div>
     </div>
 
-    <div class="prose py-4" itemprop="articleBody">
+    <div class="prose py-2" itemprop="articleBody">
         {{ content }}
     </div>
 </article>
