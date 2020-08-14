@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{% if page.tag_name %}
+{% assign tag_name = page.tag_name %}
+{% endif %}
+
+<div class="container mx-auto">
+    {% for post in site.tags[tag_name] %}
+    {% include post_block.html %}
+    {% endfor %}
+</div>
