@@ -11,6 +11,7 @@ github_repo: steppen-wolf
 plugins:
   - jekyll-feed
   - jekyll-analytics
+  - jekyll-sitemap
 
 jekyll_analytics:
   GoogleAnalytics:
